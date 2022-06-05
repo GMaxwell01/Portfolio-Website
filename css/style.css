@@ -4,14 +4,14 @@ Primary Color: #ff210f;
 Secondary Color: #ff7505;
 Accent Colour: #ffof6c
 Background Colour: #ffffff
-Text Colour: #0000000
+Text Colour: #000000
 */
 
 
 header {
   background-color: #ffffff;
   padding: 10px 0;
-  border-bottom: 10px solid #0000000;
+  border-bottom: 10px solid #000000;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -23,7 +23,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #0000000;
+  color: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -57,7 +57,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ffof6c;
+  color: #ffffff;
 }
 a:hover {
   color: #ff7505;
@@ -71,13 +71,18 @@ a:active { /* selected link */
   color: #ff7505;
 }
 
+nav a
+nav a:visited
+nav a:hover, nav a:focus
+nav a:active
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 100px;
+  margin: 40px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -118,6 +123,14 @@ a:active { /* selected link */
 
 .logo {
   max-width: 500px;
+}
+
+.Social_Icons{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav > ul > li > a:visited {
