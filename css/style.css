@@ -2,7 +2,7 @@
 Colors used:
 Primary Color: #ff210f;
 Secondary Color: #ff7505;
-Accent Colour: #ffof6c
+Accent Colour: #ff7505
 Background Colour: #ffffff
 Text Colour: #000000
 */
@@ -10,9 +10,9 @@ Text Colour: #000000
 
 header {
   background-color: #ffffff;
-  padding: 10px 0;
-  border-bottom: 10px solid #000000;
-  text-align: center;
+  padding: 0px 0;
+  border-bottom: 1.5px solid #000000;
+  text-align: : center
   position: fixed;
   width: 100%;
 }
@@ -48,9 +48,6 @@ h4 {
   font-weight: 400;
 }
 
-img {
-  width: 100%;
-}
 
 a {
   color: #ff210f;
@@ -100,6 +97,7 @@ nav a:active
   border: 2px solid #ff7f50;
 }
 
+
 .button.contact:hover {
   background-color: #ff7505;
   color: #ffffff;
@@ -108,7 +106,7 @@ nav a:active
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0px 15px;
 }
 
 .row {
@@ -118,28 +116,62 @@ nav a:active
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: left;
 }
 
 .logo {
-  max-width: 500px;
-}
-
-.Social_Icons{
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+    width: 100px;
+    padding: 20px;
 }
 
 nav > ul > li > a:visited {
   padding: 0 15px;
+  align-content: center;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+
+}
+
+.navbar {
+  align: right
 }
 
 main {
   padding-top: 133px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: black;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: right;
+  padding: 35px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#ff210f;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ff210f
+  color: black;
+}
+
+.social svg {
+width: 48px;
+padding: 20px;
 }
