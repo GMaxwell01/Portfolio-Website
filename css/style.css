@@ -7,16 +7,14 @@ Background Colour: #ffffff
 Text Colour: #0000000
 */
 
-body {
-  font-family: 'Overpass', sans-serif;
-}
 
 header {
   background-color: #ffffff;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0;
   border-bottom: 10px solid #0000000;
   text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 body {
@@ -58,23 +56,21 @@ a {
   color: #ff210f;
   text-decoration: none; /* No underlining */
 }
+a:visited { /* visited link */
+  color: #ffof6c;
+}
 a:hover {
   color: #ff7505;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-
-a:visited { /* visited link */
-  color: #ffof6c;
+a:focus {
+  color: #ff7505;
+  text-decoration: underline;
 }
 a:active { /* selected link */
   color: #ff7505;
 }
 
-a:hover,
-a:focus {
-  color: #ff7505;
-  text-decoration: underline;
-}
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
