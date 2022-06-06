@@ -49,45 +49,40 @@ h4 {
 }
 
 
-a {
-  color: #black;
+nav a {
+  color: #000000;
   text-decoration: none; /* No underlining */
 }
-a:visited { /* visited link */
-  color: #black;
+nav a:visited { /* visited link */
+  color: #000000;
 }
-a:hover {
+nav a:hover {
   color: #ff7505;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:focus {
+nav a:focus {
   color: #ff7505;
   text-decoration: underline;
 }
-a:active { /* selected link */
+nav a:active { /* selected link */
   color: #ff7505;
 }
 
-nav a
-nav a:visited
-nav a:hover, nav a:focus
-nav a:active
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: white;
   font-weight: 400;
-  padding: 100px;
-  margin: 40px;
+  text-decoration: none;
+  padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity: 0.8;
 }
 
 .button.contact {
@@ -139,21 +134,20 @@ nav a:active
 }
 
 .project {
-  width: 250px;
-  padding 20px
+  width: 300px;
+  padding 20px;
 }
 
 .profile_picture  {
-width: 300px
-padding: 20px
+width: 300px;
+padding: 20px;
 }
 
 nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #black;
-
+  color: #000000;
 }
 
 nav > ul {
@@ -175,13 +169,39 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  color: black;
+  color: 000000;
 }
 
+img {
+width: 100%;
+}
 
 .social svg {
 width: 48px;
 padding: 20px;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -207,6 +227,12 @@ Medium devices (640px and larger)
 [class*="col-"] {
   float: left;
   padding: 10px
+}
+
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
 }
 
 #about-page h3 { margin-top: 0;}
