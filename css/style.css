@@ -113,18 +113,34 @@ nav a:active
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
+  text-align: center;
   width: 100%;
+}
+
+#hero span {
+  display: block;
 }
 
 .logo {
     width: 150px;
     padding: 20px;
+}
+
+.project {
+  width: 250px;
+  padding 20px
 }
 
 .profile_picture  {
@@ -183,10 +199,29 @@ Medium devices (640px and larger)
       margin-top: 4px;
     }
   }
+
+  .col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+#about-page h3 { margin-top: 0;}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
