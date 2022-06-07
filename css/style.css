@@ -7,11 +7,14 @@ Background Colour: #ffffff
 Text Colour: #000000
 */
 
+* {
+  box-sizing: border-box;
+}
 
 header {
   background-color: #ffffff;
   text-align: center;
-  padding: 0px 0;
+  padding: 15px 0;
   border-bottom: 1.5px solid #000000;
   position: fixed;
   width: 100%;
@@ -48,11 +51,29 @@ h4 {
   font-weight: 400;
 }
 
+nav {
+  margin-top: 0.8em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+}
 
 nav a {
   color: #000000;
   text-decoration: none; /* No underlining */
+  font-weight: 500;
+  padding: 10px 0px;
+  display: block;
 }
+
 nav a:visited { /* visited link */
   color: #000000;
 }
@@ -129,40 +150,24 @@ nav a:active { /* selected link */
 }
 
 .logo {
-    width: 150px;
-    padding: 20px;
+    max-width: 75px;
 }
 
 .project {
   width: 300px;
-  padding 20px;
 }
 
 .profile_picture  {
-width: 300px;
 padding: 20px;
+max-width: 250px;
 }
 
-nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #000000;
+.center {
+  text-align: center;
 }
-
-nav > ul {
-  list-style-type: none;
-  padding: 0px;
-}
-
-nav > ul > li {
-  display: inline-block;
-  width: 100%;
-}
-
 
 main {
-  padding-top: 133px;
+  padding-top: 123px;
 }
 
 footer {
@@ -177,8 +182,12 @@ width: 100%;
 }
 
 .social svg {
-width: 48px;
+max-width: 80px;
 padding: 20px;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 @keyframes color-change {
@@ -204,6 +213,18 @@ padding: 20px;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -218,7 +239,10 @@ Medium devices (640px and larger)
       float: right;
       margin-top: 4px;
     }
-  }
+
+    .social svg {
+    max-width: 80px;
+    }
 
   .col-md-6 {
   width: 50%;
@@ -229,13 +253,8 @@ Medium devices (640px and larger)
   padding: 10px
 }
 
-.berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;
-}
-
 #about-page h3 { margin-top: 0;}
+  }
 
 /* ==============================
 Large devices (1024px or larger)
