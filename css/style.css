@@ -13,7 +13,6 @@ Text Colour: #000000
 
 header {
   background-color: #ffffff;
-  text-align: center;
   padding: 15 0px;
   border-bottom: 1.5px solid #000000;
   position: fixed;
@@ -243,6 +242,7 @@ height: auto;
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -273,6 +273,19 @@ Medium devices (640px and larger)
     max-width: 80px;
     }
 
+    nav li {
+      display: inline-block;
+      margin: 0 8px;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+  display: none;
+}
+
   .col-md-6 {
   width: 50%;
 }
@@ -283,12 +296,6 @@ Medium devices (640px and larger)
 }
 
 #about-page h3 { margin-top: 0;}
-  }
-
-  nav li {
-    display: inline-block;
-    margin: 0 8px;
-    min-width: 641px;
   }
 
   nav > ul {
