@@ -6,7 +6,6 @@ Accent Colour: #ff7505
 Background Colour: #ffffff
 Text Colour: #000000
 */
-
 * {
   box-sizing: border-box;
 }
@@ -22,15 +21,19 @@ header {
 body {
   background-color: #ffffff;
   font-family: 'Overpass', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -45,6 +48,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -62,60 +66,63 @@ nav ul {
 
 nav a {
   color: #000000;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
   font-weight: 500;
   padding: 10px 0px;
   display: block;
 }
 
-nav a:visited { /* visited link */
+nav a:visited {
+  /* visited link */
   color: #000000;
 }
+
 nav a:hover {
   color: #ff7505;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
+
 nav a:focus {
   color: #ff7505;
   text-decoration: underline;
 }
-nav a:active { /* selected link */
+
+nav a:active {
+  /* selected link */
   color: #ff7505;
 }
 
-
 .button {
   display: inline-block;
-  background-color: #DB3B00;
-  color: white;
+  background-color: #ff7f50;
+  color: #DB3B00;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #DB3B00;
-  transition: 0.2s opacity;
-  margin: 25px;
+  solid: #DB3B00;
+  border-bottom: 2px;
+  transition: 0.3s;
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #DB3B00;
+  color: ##DB3B00;
   text-transform: uppercase;
   border: 2px solid #DB3B00;
+  margin: 20px;
 }
-
 
 .button.contact:hover {
   background-color: #DB3B00;
   color: #ffffff;
 }
-
-
-
 
 /* Layout styling */
 .container {
@@ -123,7 +130,8 @@ nav a:active { /* selected link */
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -132,7 +140,10 @@ nav a:active { /* selected link */
   display: table;
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 #hero {
   background-color: #ffffff;
@@ -147,16 +158,16 @@ nav a:active { /* selected link */
 }
 
 .logo {
-    max-width: 75px;
+  max-width: 75px;
 }
 
 .project {
   width: 300px;
 }
 
-.profile_picture  {
-padding: 20px;
-max-width: 250px;
+.profile_picture {
+  padding: 20px;
+  max-width: 250px;
 }
 
 .center {
@@ -175,12 +186,12 @@ footer {
 }
 
 img {
-width: 100%;
+  width: 100%;
 }
 
 .social svg {
-max-width: 80px;
-padding: 20px;
+  max-width: 80px;
+  padding: 20px;
 }
 
 .social a {
@@ -188,9 +199,17 @@ padding: 20px;
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -198,8 +217,13 @@ padding: 20px;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -211,15 +235,15 @@ padding: 20px;
 }
 
 .berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .navtoggle li:not(:last-child) {
@@ -238,7 +262,7 @@ height: auto;
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -246,79 +270,77 @@ height: auto;
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-  @media only screen and (min-width: 640px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-
-    .social svg {
-    max-width: 80px;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 8px;
-    }
-
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
-
-    .navtoggle li:last-child {
-  display: none;
-}
-
-  .col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
-
-#about-page h3 { margin-top: 0;
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
-  nav > ul {
-  margin: 0;
-}
-}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-/* ==============================
+  .social svg {
+    max-width: 80px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
-  .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-/* ==============================
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+  @media only screen and (min-width: 1440px) {}
