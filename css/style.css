@@ -12,7 +12,7 @@ Text Colour: #000000
 
 header {
   background-color: #ffffff;
-  padding: 15 0px;
+  padding: 15px 0px;
   border-bottom: 1.5px solid #000000;
   position: fixed;
   width: 100%;
@@ -318,7 +318,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
   #about-page h3 {
@@ -328,6 +328,7 @@ Medium devices (640px and larger)
   nav>ul {
     margin: 1em 0;
   }
+}
 
   /* ==============================
 Large devices (1024px or larger)
