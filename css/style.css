@@ -19,6 +19,7 @@ header {
   width: 100%;
 }
 
+
 body {
   background-color: #ffffff;
   font-family: 'Overpass', sans-serif;
@@ -87,29 +88,30 @@ nav a:active { /* selected link */
 .button {
   display: inline-block;
   background-color: #ff7f50;
-  color: white;
+  color: #DB3B00;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  border-radius: 3px; solid: #DB3B00;
+  border-bottom: 2px;
+  transition: 0.3s;
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: ##DB3B00;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #DB3B00;
+  margin: 20px;
 }
 
 
 .button.contact:hover {
-  background-color: #ff7505;
+  background-color: #DB3B00;
   color: #ffffff;
 }
 
