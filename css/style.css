@@ -287,6 +287,7 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+<<<<<<< HEAD
   }
 
   nav {
@@ -334,10 +335,54 @@ Medium devices (640px and larger)
    color: #ff7505 !important;
   }
 }
+=======
+  }
 
-/* ==============================
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .social svg {
+    max-width: 80px;
+  }
+>>>>>>> main
+
+  nav li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
+<<<<<<< HEAD
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;
@@ -355,3 +400,17 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+=======
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* ==============================
+X-large devices (1440px or larger)
+================================= */
+  @media only screen and (min-width: 1440px) {}
+>>>>>>> main
